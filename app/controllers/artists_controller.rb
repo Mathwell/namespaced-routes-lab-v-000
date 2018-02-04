@@ -12,7 +12,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    #binding.pry
+    binding.pry
     if @preferences && !@preferences.allow_create_artists
         redirect_to artists_path
       else
